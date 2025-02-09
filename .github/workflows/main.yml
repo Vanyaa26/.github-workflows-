@@ -1,8 +1,10 @@
 name: Daily Commit
 
 on:
+  workflow_dispatch:  # Allows manual trigger
   schedule:
     - cron: '0 0 * * *'  # Runs every day at midnight UTC
+  # Runs every day at midnight UTC
 
 jobs:
   commit:
